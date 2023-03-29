@@ -123,7 +123,7 @@ nav {
   
   .dropdown:hover .dropbtn {background-color: var(--mainColor);}
 
-/* Footer */
+/* ***********Footer ********************/
 /* class footer-col2 is for above section of footer */
 /* class footer-col is for below section of footer */
 
@@ -147,6 +147,11 @@ ul{
 	padding: 0 20px;
 
 }
+.first-section{
+	display: flex;
+	align-items: center;
+
+}
 
 .footer-col{
 	width: 25%;
@@ -159,6 +164,7 @@ ul{
 @media(max-width: 767px){
   .footer-col{
     width: 25%;
+	align-items: center;
     margin-bottom: 30px;
 }
   .footer-col2{
@@ -193,11 +199,58 @@ iframe{
 }
 /* upper-footer */
 .certificate{
-	margin: 2px 2px;
+
 	display: flex;
 	flex-wrap: wrap;
 
 }
 .certificate img{
-	width: 33%;
+	margin: 2px 7px;
+	width: 30%;
+}
+
+@media(max-width: 767px){
+	.certificate {
+		justify-content: center;
+	}
+	.certificate img{
+		margin: 2px 7px;
+		width: 20%;
+		height: 20%;
+	}
+  }
+
+/* 2nd section */
+.second-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.7rem;
+	max-width: 454px;
+	margin: auto;
+}
+.second-section div{
+	text-align: center;
+	width: 50%;
+}
+
+.my-icons :nth-child(n){
+	margin: 5px 8px;
+}
+@media(max-width: 767px){
+	.second-section div{
+		width: 100%;
+
+	}
+  }
+  @media(max-width: 595px){
+	.second-section div{
+		width: 100%;
+	}
+  }
+  @media(max-width: 415px){
+	.second-section div{
+		width: 100%;
+	}
 }
